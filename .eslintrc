@@ -1,0 +1,18 @@
+{
+  "extends": "eslint-config-egg",
+  "overrides": [{
+    "files": ["app/controller/**/*"],
+    "rules": {
+      "jsdoc/check-tag-names": "off"
+    }
+  }],
+  "rules": {
+    "multiline-comment-style": "error",
+    "object-curly-newline": ["error", {
+      // "ObjectExpression": "always",
+      "ObjectPattern": { "multiline": true, "minProperties":3 },
+      // "ImportDeclaration": "never",
+      // "ExportDeclaration": { "multiline": true, "minProperties": 3 }
+  }]
+  }
+}
